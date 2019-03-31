@@ -10,3 +10,6 @@ PING 172.22.75.166 (172.22.75.166) 56(84) bytes of data.
 64 bytes from 172.22.75.166: icmp_seq=5 ttl=63 time=12.2 ms
 64 bytes from 172.22.75.166: icmp_seq=6 ttl=63 time=329 ms
 64 bytes from 172.22.75.166: icmp_seq=7 ttl=63 time=4.22 ms
+
+
+EndPoint: a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com
