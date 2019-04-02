@@ -16,8 +16,10 @@ EndPoint: a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com
 
 Publisher:
 cd path-to-certs-folder
+
 python basicDiscovery.py --endpoint a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com --rootCA root-ca-cert.pem --cert e5a3442bc7.cert.pem --key e5a3442bc7.private.key --thingName PublisherG2 --topic 'greengrass/group2' --mode publish --message 'Hello, World! Sent from Publisher'
 
 Subscriber:
+
 cd path-to-certs-folder
 python basicDiscovery.py --endpoint a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com --rootCA root-ca-cert.pem --cert ad2dc1db49.cert.pem --key ad2dc1db49.private.key --thingName Subscriber1G2 --topic 'greengrass/group2' --mode subscribe
