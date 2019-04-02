@@ -12,14 +12,24 @@ PING 172.22.75.166 (172.22.75.166) 56(84) bytes of data.
 64 bytes from 172.22.75.166: icmp_seq=7 ttl=63 time=4.22 ms
 
 
-EndPoint: a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com
+### EndPoint
+a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com
 
-Publisher:
-cd path-to-certs-folder
 
-python basicDiscovery.py --endpoint a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com --rootCA root-ca-cert.pem --cert e5a3442bc7.cert.pem --key e5a3442bc7.private.key --thingName PublisherG2 --topic 'greengrass/group2' --mode publish --message 'Hello, World! Sent from Publisher'
 
-Subscriber:
+### Start GreenGrass Service
+* Navigate to /greengrass/ggc/core
+* sudo ./greengrassd start
 
-cd path-to-certs-folder
-python basicDiscovery.py --endpoint a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com --rootCA root-ca-cert.pem --cert ad2dc1db49.cert.pem --key ad2dc1db49.private.key --thingName Subscriber1G2 --topic 'greengrass/group2' --mode subscribe
+### Check Greengrass' running status
+* ps aux | grep -E 'greengrass.*daemon'
+
+#### Starting the greengrass service is needed to deploy the core from aws
+
+### Publisher
+* cd path-to-certs-folder
+* python basicDiscovery.py --endpoint a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com --rootCA root-ca-cert.pem --cert e5a3442bc7.cert.pem --key e5a3442bc7.private.key --thingName PublisherG2 --topic 'greengrass/group2' --mode publish --message 'Hello, World! Sent from Publisher'
+
+### Subscriber
+* cd path-to-certs-folder
+* python basicDiscovery.py --endpoint a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com --rootCA root-ca-cert.pem --cert ad2dc1db49.cert.pem --key ad2dc1db49.private.key --thingName Subscriber1G2 --topic 'greengrass/group2' --mode subscribe
