@@ -36,13 +36,21 @@ a2nwsoqeru0ok9-ats.iot.us-west-2.amazonaws.com
 
 #### Change the script name to distance_discovery.py and run the same commands
 
-2019-04-02 20:08:59,358 - AWSIoTPythonSDK.core.protocol.internal.workers - DEBUG - Produced [message] event
-2019-04-02 20:08:59,360 - AWSIoTPythonSDK.core.protocol.internal.workers - DEBUG - Dispatching [message] event
-2019-04-02 20:08:59,361 - AWSIoTPythonSDK.core.protocol.internal.clients - DEBUG - Invoking custom event callback...
-Received message on topic greengrass/group2: {"message": "Measured Distance = 172.6 cm\n", "sequence": 88}
+2019-04-02 20:13:51,596 - AWSIoTPythonSDK.core.protocol.internal.workers - DEBUG - Produced [message] event
+2019-04-02 20:13:51,599 - AWSIoTPythonSDK.core.protocol.internal.workers - DEBUG - Dispatching [message] event
+2019-04-02 20:13:51,600 - AWSIoTPythonSDK.core.protocol.internal.clients - DEBUG - Invoking custom event callback...
+Received message on topic greengrass/group2: {"message": "Measured Distance = 9.0 cm\n", "sequence": 35}
 
-2019-04-02 20:09:00,362 - AWSIoTPythonSDK.core.protocol.internal.workers - DEBUG - Produced [message] event
-2019-04-02 20:09:00,365 - AWSIoTPythonSDK.core.protocol.internal.workers - DEBUG - Dispatching [message] event
-2019-04-02 20:09:00,366 - AWSIoTPythonSDK.core.protocol.internal.clients - DEBUG - Invoking custom event callback...
-Received message on topic greengrass/group2: {"message": "Measured Distance = 172.6 cm\n", "sequence": 89}
+2019-04-02 20:13:52,599 - AWSIoTPythonSDK.core.protocol.internal.workers - DEBUG - Produced [message] event
+2019-04-02 20:13:52,603 - AWSIoTPythonSDK.core.protocol.internal.workers - DEBUG - Dispatching [message] event
+2019-04-02 20:13:52,604 - AWSIoTPythonSDK.core.protocol.internal.clients - DEBUG - Invoking custom event callback...
+Received message on topic greengrass/group2: {"message": "Measured Distance = 7.7 cm\n", "sequence": 36}
+
+2019-04-02 20:13:53,605 - AWSIoTPythonSDK.core.protocol.internal.workers - DEBUG - Produced [message] event
+2019-04-02 20:13:53,606 - AWSIoTPythonSDK.core.protocol.internal.workers - DEBUG - Dispatching [message] event
+2019-04-02 20:13:53,607 - AWSIoTPythonSDK.core.protocol.internal.clients - DEBUG - Invoking custom event callback...
+Received message on topic greengrass/group2: {"message": "Measured Distance = 6.4 cm\n", "sequence": 37}
+
+#### Remember to run the ultrasonic_distance.py in a different tab
+
 
